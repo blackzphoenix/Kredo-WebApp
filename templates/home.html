@@ -4,6 +4,25 @@
   <div class = "jumbotron text-center">
     <h1>Welcome to KREDO</h1>
     <p class="Lead"> Wish to learn all that is currently hot in the tech industry? Need help training your students or workforce?</p>
+    <h3 class="Lead">SignUp Today</h3>
+    <p>Looking for some interesting hot topics, here you register NOW!!</h1>
+
+
+    {% if session.logged_in == NULL %}
+      <a href="/register" class="btn btn-primary btn-lg">Register</a>
+      <a href="/login" class="btn btn-success btn-lg">Login</a>
+    {% endif %}
+
+  </div>
+  <div>
+    <div class="header">
+            <a href="/"><strong>Kredo.ai</strong></a>
+        <span class="left">
+            <a href="/about">About Us</a>
+            <a href="/contact">Contact Us</a>
+        </span>
+        <div class="clr"></div>
+    </div>
   </div>
 
 {% endblock %}
